@@ -1,84 +1,77 @@
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Scholarship registration Form</title>
-    </head>
-    <h1>scholarship Registration Form</h1>
-    <body bgcolor=""lightgrey">
-        <form>
-            <legend>
-                <h3>User Personal Information:</h3> </legend>
-                <label for="name">Enter your full name:</label>
-                <input type="text" required Placeholder="First Name"/>
-                <input type="text" required Placeholder="Last Name"/><br>
+<head>
+    <title>Internship Application Form</title>
+</head>
+<body>
 
-                <label for="email">Enter your email:</label>
-                <input type="email" required /><br>
+    <center>
+        <h2>Internship Application Form</h2>
 
-                <label for="password">Enter your password:</label>
-                <input type="password" required /><br>
+        <table border="1" width="60%" cellpadding="15" cellspacing="0" align="center">
+            <tr>
+                <td>
+                    <form>
+                        <label>Full Name:</label><br>
+                        <input type="text" name="name" style="width: 98%;" required><br><br>
 
-                <label for="confirmPassword">Confirm your Password:</label>
-                <input type="password" required /><br>
+                        <label>Birth Date:</label><br>
+                        <input type="date" name="birthdate" style="width: 98%;" required><br><br>
 
-                <label for="dob">Enter your Date of Birth:</label>
-                <input type="date" required /><br>
+                        <label>Gender:</label><br>
+                        <select name="gender" style="width: 100%;" required>
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select><br><br>
 
-                <label>select your gender</label>
-                <dic class="gender-group">
-                    <input type="radio" value="male" required />
-                    <label for="male">Male</label>
-                    <input type="radio" value="Female" />
-                    <label for="female">Female</label>
-                    <input type="radio" value="others" />
-                    <label for="others">others</label>
-                </div>
+                        <label>Age:</label><br>
+                        <input type="number" name="age" min="18" max="60" style="width: 98%;" required><br><br>
 
-                <label for="address">CEnter your Address:</label>
-                <input type="textarea" required></textarea><br>
+                        <label>Address:</label><br>
+                        <textarea name="address" style="width: 98%; height: 80px;" required></textarea><br><br>
 
-                <label>select your state:</label>
-                <dic class="state-group">
-                    <select>
-                        <option>-------------Select State-------------</option>
-                        <option>Madhya Pradesh</option>
-                        <option>Maharashtra</option>
-                        <option>Gujarat</option>
-                        <option>Tamil Nadu</option>
-                        <option>Bihar</option>
-                    </select>
+                        <label>Email:</label><br>
+                        <input type="email" name="email" style="width: 98%;" required><br><br>
 
-                    <legend><h3>Educational Info:</h3></legend>
-                    <label>Select your Branch:</label>
-                    <div class="branch-group"></div>
-                    <input type="checkbox" /> EMtech
-                    <input type="checkbox" /> CSE
-                    <input type="checkbox" /> IT
-                    <input type="checkbox" /> ETC
-                    <input type="checkbox" /> Civil
-                    <input type="checkbox" /> Mech<br>
+                        <label>Phone:</label><br>
+                        <input type="tel" name="phone" style="width: 98%;" required><br><br>
 
-                    <label for="ssc">SSC % marks</label>
-                    <input type="% marks" required /><br>
-                    <label for="ssc">HSC % marks</label>
-                    <input type="% marks" required /><br>
-                    <label for="ssc">BTech % marks</label>
-                    <input type="% marks" required /><br>
+                        <label>Year of Study:</label><br>
+                        <select name="year" style="width: 100%;" required>
+                            <option value="">Select Year</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                        </select><br><br>
 
-                    <legend><h3>Upload Documents:</h3></legend>
-                    <label for="photo">Upload photo:</label>
-                    <input type="file" required /><br>
-                    <label for="photo">Income Certification</label>
-                    <input type="file" required /><br>
-                    <label for="photo">Caste Certification</label>
-                    <input type="file" required /><br>
+                        <label>Internship Duration:</label><br>
+                        <select name="duration" style="width: 100%;" required>
+                            <option value="">Select Duration</option>
+                            <option>1 Month</option>
+                            <option>2 Months</option>
+                            <option>3 Months</option>
+                            <option>4 Months</option>
+                            <option>5 Months</option>
+                            <option>6 Months</option>
+                        </select><br><br>
 
-                    <input type=""Submit" value="Register" />
+                        <label>Resume (PDF only):</label><br>
+                        <input type="file" name="resume" accept=".pdf" style="width: 98%;" required><br><br>
 
-        </form>
-</html>
+                        <label>Technical Skills:</label><br>
+                        <textarea name="skills" style="width: 98%; height: 80px;" placeholder="List your technical skills (e.g., Python, Java, Web Development)" required></textarea><br><br>
 
-    </form>
+                        <input type="submit" value="Apply" style="width: 100%; padding: 10px;">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
 
 </body>
 </html>
+
+                    
